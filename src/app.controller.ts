@@ -18,6 +18,6 @@ export class AppController {
     // 디스크 저장 테스트를 위해 buffer 사용 제거
     // console.log(file.buffer.toString('utf-8'));
     console.log(file);
-    return 'Upload File';
+    return `${file.originalname} Upload File Check http://localhost:3000/uploaded-file/${file.filename}`;
   }
 }
