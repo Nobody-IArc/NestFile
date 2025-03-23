@@ -19,3 +19,14 @@ Content-Disposition: form-data; name="file"; filename="upload-test.txt"
 # 실제 파일 업로드
 < upload-test.txt
 --test-upload-file--
+
+### 사진 업로드
+POST http://localhost:3000/upload-file
+Content-Type: multipart/form-data; boundary=test-upload-image
+
+--test-upload-image
+Content-Disposition: form-data; name="file"; filename="multer_test_image.jpg"
+Content-Type: image/jpeg
+
+< multer_test_image.jpg
+--test-upload-image--
