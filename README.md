@@ -1,3 +1,11 @@
+## 진행 내역
+
+|날짜|내역|진행도|비고|
+|:---:|:---:|:---:|:---:|
+|03.23|Multer 모듈을 이용한 파일 업로드 기능 테스트|30%|Multer 모듈은 Nest.js의 내장되어 있음|
+
+
+---
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
