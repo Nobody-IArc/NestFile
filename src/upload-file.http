@@ -1,0 +1,21 @@
+### 테스트 용의 존재하지 않는 파일 전송
+POST http://localhost:3000/upload-file
+Content-Type: multipart/form-data; boundary=test-upload-file
+
+--test-upload-file
+Content-Disposition: form-data; name="file"; filename="test.txt"
+
+Test File
+--test-upload-file--
+
+
+### 실제 존재하는 파일 전송
+POST http://localhost:3000/upload-file
+Content-Type: multipart/form-data; boundary=test-upload-file
+
+--test-upload-file
+Content-Disposition: form-data; name="file"; filename="upload-test.txt"
+
+# 실제 파일 업로드
+< upload-test.txt
+--test-upload-file--
